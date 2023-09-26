@@ -1,11 +1,16 @@
 var video = document.querySelector('video');
 
-navigator.mediaDevices.getUserMedia({video:{width:720, aspectRatio:21/9, height:300}})
-.then(stream => {
+navigator.mediaDevices.getUserMedia({
+    video: {
+        width: 720,
+        aspectRatio: 21/9,
+        height: 300,
+        facingMode: 'environment' // Aqui especificamos a câmera traseira
+    }
+}).then(stream => {
     video.srcObject = stream;
     video.play();
-})
-.catch(error => {
+}).catch(error => {
     console.log(error);
 })
 
