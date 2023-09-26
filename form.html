@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleform.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/Comprovante.svg" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Dados do Comprovante</h1>
+                    </div>
+                </div>
+
+                <div>
+                    <!-- Adicione um ID ao botão "Tirar foto" -->
+                    <label class="picture" for="picture__input" tabIndex="0">
+                        <span class="picture__image"></span>
+                      </label>
+                      
+                      <input type="file" name="picture__input" id="picture__input">
+                    <script src="./scriptform.js"></script>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="name">Nome do Estabelecimento</label>
+                        <input id="name" type="text" name="name">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="type">Tipo de Pagamento</label>
+                        <input id="type" type="text" name="type">
+                    </div>
+                    <div class="input-box">
+                        <label for="date">Data</label>
+                        <input id="date" type="date" name="date">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="hour">Horário</label>
+                        <input id="hour" type="time" name="number">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="expenses">Despesa Pessoal</label>
+                        <input id="expenses" type="password" name="expenses" placeholder="Não Reembolsar*">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="value">Valor</label>
+                        <input id="value" type="number" name="value">
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="#">Cadastrar Comprovante</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
