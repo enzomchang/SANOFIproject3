@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>webSite</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#" class="logo">
+            <img class="logo" src="assets/logoSonofi.png">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#aboutUsAnchor">Sobre Nós</a></li>
+                <li class="nav-item"><a href="#formAnchor">Contato</a></li>
+                <li class="nav-item"><a href="./login.html">Login</a></li>
+                <li class="nav-item"><a href="./form.html">Cadastrar Comprovante</a></li>
+                <i class='bx bx-search'></i>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    
+    
+    <main>
+        <section class="home">
+            <div class="home-text">
+                <h4 class="text-h4">Bem-Vindo ao Novo</h4>
+                <h1 class="text-h1">ReciboÁgil</h1>
+                <p>Seus recibos lidos e processados diretamente na sua tela em segundos.</p>
+                <a href="#" class="home-btn">Conheça Mais</a>
+            </div>
+            <div class="home-img">
+                <img src="assets/appFinance.png">
+            </div>
+        </section>
+    </main>    
+        
+    <section>
+        <div class="container">
+            <h1 class="text-h1">Perguntas Frequêntes</h1>
+            <br>
+            <ul class="perguntas">
+                <li>
+                <h2 class="pergunta-titulo" onclick="togglePergunta(this)">Como digitalizar os recibos?
+                    <i class="fas fa-chevron-up"></i>
+                </h2>
+                <p class="pergunta-descricao">Abra a câmera do seu celular, tire uma foto do recibo e o aplicativo vai preencher suas despesas automaticamente para você.</p>
+                </li>
+                <li>
+                <h2 class="pergunta-titulo" onclick="togglePergunta(this)">O ReciboÁgil é gratuito?
+                    <i class="fas fa-chevron-up"></i>
+                </h2>
+                <p class="pergunta-descricao">O ReciboÁgil foi feito em parceria com a empresa SANOFI, então todos os funcionários, podem utilizar deste serviço gratuitamente.</p>
+                </li>
+                <li>
+                <h2 class="pergunta-titulo" onclick="togglePergunta(this)">Como posso visualizar?
+                    <i class="fas fa-chevron-up"></i>
+                </h2>
+                <p class="pergunta-descricao">Após fazer o login com a conta da empresa,  os usuários terão acesso a uma seção dedicada onde poderão visualizar todas as despesas submetidas. As despesas serão apresentadas em uma lista, exibindo informações essenciais, como o valor, a data e o nome do estabelecimento.
+                </li>
+            </ul>
+            </div>
+    </section>
+
+    <section class="home" id="aboutUsAnchor">
+        <div class="home-text">
+            <h4 class="text-h4">Sobre nós</h4>
+            <p>Somos um grupo de estudantes de Engenharia de Computação da FIAP, unidos pela missão de solucionar o desafio da empresa SANOFI. Nosso objetivo é automatizar o processo de prestação de contas, utilizando tecnologias avançadas como processamento de imagem, OCR e aprendizado de máquina. Combinando nossa paixão pela tecnologia e colaboração com a SANOFI, buscamos otimizar a eficiência, reduzir custos e simplificar o trabalho dos funcionários.</p>
+            <a href="#" class="home-btn">Conheça Mais</a>
+        </div>
+        <div class="home-img">
+            <img src="assets/AboutUs.png" class="image-animation" alt="Imagem com animação">
+        </div>
+    </section>
+
+    <section class="form" id="formAnchor">
+            <div class="container">
+                <h1>Contate-nos</h1>
+                <form action="#" method="POST"> 
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Enviar</button>
+                </form>
+            </div>
+        </section>
+    
+    <script src="script.js"></script>
+</body>
+<footer class="rodape">
+    <p>&copy; 2023 Recibo Ágil. Todos os direitos reservados.</p>
+</footer>
