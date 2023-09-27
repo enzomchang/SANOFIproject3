@@ -1,0 +1,15 @@
+{
+  "name": "sanofiproject3",
+  "version": "1.0.0",
+  "description": "Enzo Moraes – RM 87424\r Gabriel Aires – RM 88731\r Matheus Martins – RM 89129\r Mike Almeida - RM 87413\r Patrick Neris – RM 88425",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mindee": "^4.3.1",
+    "uuid": "^9.0.1"
+  }
+}
